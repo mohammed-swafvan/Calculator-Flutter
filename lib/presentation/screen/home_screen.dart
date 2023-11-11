@@ -93,14 +93,11 @@ class HomeScreen extends StatelessWidget {
                                   } else if (provider.buttonList[index] == 'Del') {
                                     if (provider.questionHandler == '') {
                                       provider.questionHandler = '0';
-                                      provider.answerHandler = '0';
                                     } else if (provider.questionHandler.length == 1) {
                                       provider.questionHandler = '0';
-                                      provider.answerHandler = '0';
                                     } else {
                                       provider.questionHandler =
                                           provider.questionHandler.substring(0, provider.questionHandler.length - 1);
-                                      provider.answerHandler = '0';
                                     }
                                   } else {
                                     if (provider.questionHandler == '0') {

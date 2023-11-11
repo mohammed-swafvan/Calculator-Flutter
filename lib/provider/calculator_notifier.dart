@@ -29,7 +29,6 @@ class CalculatorNotifier extends ChangeNotifier {
     double evaluate = expression.evaluate(EvaluationType.REAL, contextModel);
 
     answer = evaluate.toString();
-    questionHandler = '0';
     notifyListeners();
   }
 
